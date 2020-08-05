@@ -1,0 +1,54 @@
+
+Different types of error:-
+
+Coercion error:-
+
+	when we try to convert the data from one type to another either implicitly or explicitly this error may occurs.
+	For eg:-if(0) - this 0 is equivalent to false which is of boolean type
+
+Data type error:-
+	Typically happens with the insufficient data value checking.
+
+eg:- function sum(num1,num2){
+	return sum1  + sum2
+}
+sum('hi',2)
+
+Communication errors:-
+	Invalid URL:-
+		This error occurs when we are not hitting the actual URL. we should make sure we type the parameters correctly.
+		we should use encodedURIComponent() to get rid of unwanted symbols typo.
+
+	Response error:-
+		Based on server response we may get error say server status 404 which is page not found.
+
+	No network Connection:
+		If we are not proper connection with the internet then we get an error
+	
+	
+
+Throw our own error:-
+	we should throw our own error based on the logic we right to understand where and why it is failing.
+
+Try Catch :-
+	In the application level we should be handling the errors to prevent the end of execution due to error.
+
+Non-Fatal errors:-
+	Non-Fatal errors do not interfere in users main task.Affects only a portion of page and recovery is possible
+
+Fatal errors:-
+	Fatal errors  interfere in users main task. Users cannot perform any tasks in the page 
+
+Debug mode:-
+	We should do debug to check our code is working without interruption. Try catch should re-throw the error and window.onError return false and we should allow
+the browser to hndle errors.
+
+
+Rule:
+	Assume our code will fail
+	Log errors to the server
+	Programmer should handle the errors
+	Identify where errors may occur
+	Throw our own error
+	Distinguish Fatal vs Non-Fatal errors
+	Prvide Debug Mode
